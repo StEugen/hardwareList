@@ -1,0 +1,25 @@
+{% extends 'admin/base.html' %}
+
+{% block extrahead %}{{ block.super }}
+<style>
+/* VARIABLE DEFINITIONS */
+:root {
+    --primary:  #4E9F3D;
+    --secondary: #1E5128;
+    --link-fg: #4E9F3D;
+    --link-selected-fg: #4E9F3D;
+    --body-fg: #333;
+    --body-bg: #000;
+    --body-quiet-color: #666;
+    --body-loud-color: #000;
+    --darkened-bg: #000; /* A bit darker than --body-bg */
+    --selected-bg: #000; /* E.g. selected table cells */
+    --selected-row: #ffc;
+
+    --button-hover-bg: #4E9F3D;
+    --border-color: #fff;
+}
+
+
+</style>
+{% endblock %}
