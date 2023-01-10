@@ -9,6 +9,8 @@ services:
       context: .
     ports:
       - "8000:8000"
+    depends_on:
+      - db
   nginx:
     build: ./nginx
     volumes:
@@ -17,7 +19,16 @@ services:
       - "80:80"
     depends_on:
       - django_gunicorn
+  db:
+    image: postgres
+    environment: 
+      POSTGRES_USER: hard
+      POSTGRES_DB: hardware
+      POSTGRES_PASSWORD: PASSWORD
+    volumes:
+      - ~/pgdata:/var/lib/postgresql/data
 
 volumes:
   static:
+  pgdata:
       

@@ -30,7 +30,7 @@ main{
 }
 
 .fa-square-plus{
-    color: #4E9F3D !important;
+    color: #79aec8 !important;
 }
 
 .btn{
@@ -53,10 +53,10 @@ main{
 }
 
 .spinner-border{
-    border-color: #1E5128;
+    border-color: #79aec8;
 }
 
-.sr-only{ border-color: #4E9F3D; }
+.sr-only{ border-color: #79aec8; }
 
 #hard-box{
     padding: 20px;
