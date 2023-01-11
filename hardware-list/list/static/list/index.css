@@ -9,7 +9,7 @@ main{
 }
 
 #corner{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 15px;
     width: 150px;
     height: 100%;
@@ -35,9 +35,9 @@ main{
 
 .btn{
     display: block;
-    background-color: #1E5128 !important;
-    border-color: #1E5128 !important;
-    color: #4E9F3D !important;
+    background-color: #79aec8 !important;
+    border-color: #79aec8 !important;
+    color: #000 !important;
     margin-bottom: 10px;
     margin-left: 20px;
     width: 80px;
@@ -66,14 +66,15 @@ main{
 }
 
 .box-inside{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.4);
     border-radius: 20px;
     border: 2px solid #D8E9A8;
     padding: 20px;
 }
 
 .card{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #000;
     border-radius: 20px;
     border: 2px solid #D8E9A8;
     padding: 20px;
