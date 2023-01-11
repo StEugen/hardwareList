@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 html, body{
-    background-color: #191A19;
+    background-color: #fff;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -14,7 +14,7 @@ main{
     width: 150px;
     height: 100%;
     border-radius: 20px;
-    border: 2px solid #D8E9A8;
+    border: 2px solid #fff;
     top: 0;
     left: 0;
 }
@@ -37,7 +37,7 @@ main{
     display: block;
     background-color: #79aec8 !important;
     border-color: #79aec8 !important;
-    color: #000 !important;
+    color: #fff !important;
     margin-bottom: 10px;
     margin-left: 20px;
     width: 80px;
@@ -68,15 +68,14 @@ main{
 .box-inside{
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 20px;
-    border: 2px solid #D8E9A8;
+    border: 2px solid #fff;
     padding: 20px;
 }
 
 .card{
     background-color: rgba(255, 255, 255, 0.4);
-    color: #000;
     border-radius: 20px;
-    border: 2px solid #D8E9A8;
+    border: 2px solid #fff;
     padding: 20px;
 }
 

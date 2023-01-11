@@ -11,7 +11,7 @@
         <a href="admin/list/" id="add-cab-link"><i class="fa-regular fa-square-plus fa-2xl"></i></a>
         <div id="cab-box">
             {% for item in cabinets %}
-                <button class="btn btn-primary btn-outline-success" 
+                <button class="btn btn-primary btn-outline-light"
                 id="load-btn-{{ item.id }}" value="{{ item.id }}">{{ item.cabinet }}</button>
             {% endfor %}
         </div>
