@@ -4,8 +4,9 @@ from django.db.models import JSONField
 
 
 class Hardware(models.Model):
-    hardware_name = models.TextField(unique=True, null=False)
+    hardware_name = models.TextField(null=False)
     hardware_number = models.TextField(unique=True, null=False)
+    comment = models.TextField()
     cabinet = models.ForeignKey('list.cabinets', blank=True, null=True, on_delete=models.DO_NOTHING, related_name='Hardware')
 
 

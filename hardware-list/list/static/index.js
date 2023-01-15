@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function(e){
 const hardBox = document.getElementById('hard-box')
 const loading = document.getElementById('loading')
 const loadBtn = document.getElementsByTagName('button')
-
+const table = document.getElementById('table')
 
 const handleGetData = (x) =>{
     $.ajax({
@@ -13,18 +13,26 @@ const handleGetData = (x) =>{
             hardware = response.hard
             loading.classList.remove('not-visible')
             setTimeout(()=>{
-                hardBox.innerHTML = ``
+                hardBox.innerHTML = `
+                                        <tr>
+                                            <th>Наименование</th>
+                                            <th>Номер</th>
+                                            <th>Коментарий</th>
+                                        </tr>
+                                    
+                                    `
                 loading.classList.add('not-visible')
                 for(el of Array.from(hardware)){
                     data = el.cabinet_id
                     if(data == x){
                         hardware.filter(item => item.cabinet_id === data).map(item =>{
                             console.log(item)
-                            hardBox.innerHTML += `<div class="card text-white mb-3">
-                                                    ${item.hardware_name}
-                                                    <br>
-                                                    ${item.hardware_number}
-                                                </div> `
+                            hardBox.innerHTML += `
+                                                        
+                                                            <td>${item.hardware_name}</td>
+                                                            <td>${item.hardware_number}</td>
+                                                            <td>${item.comment}</td>
+                                                `
                         })
                     break
                 }
