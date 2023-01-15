@@ -7,6 +7,12 @@
 
 <main>
     {% csrf_token %}
+    <form method="GET" action="{% url 'list:hard-json' %}" id="search"
+    onsubmit="{e => { e.preventDefault(); }}">
+        <input type="text" name="search" id="search" 
+        onkeydown="return event.key != 'Enter' ">
+    </form>
+
     <div id="corner">
         <a href="admin/list/" id="add-cab-link"><i class="fa-regular fa-square-plus fa-2xl"></i></a>
         <div id="cab-box">
@@ -22,6 +28,7 @@
             <span class="sr-only">Loading...</span>
           </div>
     </div>
+
 
     <div>
        <table id="hard-box"></table>

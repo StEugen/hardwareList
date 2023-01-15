@@ -1,8 +1,8 @@
 from django.http import JsonResponse
 from list.models import *
-from django.views.generic import View, TemplateView
+from django.views.generic import View, TemplateView, ListView
 from django.contrib.auth.mixins import LoginRequiredMixin
-
+import json
 
 
 
@@ -30,3 +30,5 @@ class PostView(LoginRequiredMixin, View):
             }, safe=False
         )
 
+
+    
