@@ -71,7 +71,11 @@ form{
     border-radius: 10px;
 }
 
-
+input{
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+}
 
 
 table {
